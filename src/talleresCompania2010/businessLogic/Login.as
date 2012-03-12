@@ -9,9 +9,8 @@ package talleresCompania2010.businessLogic
 	import mx.rpc.events.ResultEvent;
 	import mx.rpc.soap.mxml.WebService;
 	
-	import talleresCompania2010.util.IdiomaApp;
 	import talleresCompania2010.Modulos.modLogin;
-	import talleresCompania2010.util.IdiomaAplicacion;
+	import talleresCompania2010.util.IdiomaApp;
 	import talleresCompania2010.util.IdiomaAppBrowser;
 
 
@@ -102,7 +101,7 @@ package talleresCompania2010.businessLogic
 	        		Application.application.lnkopciones.label = listaDatosWS[0].Nombre + " " + listaDatosWS[0].Apellido;
 	        		
         			objIdiomaAplicacion = new IdiomaApp(listaDatosWS[0].Pais, listaDatosWS[0].IDSubPerfil, this.modLoginObj);	
-				
+					Alert.show("HOla ");
 				}
         		else{
         			Alert.show(IdiomaAppBrowser.getText("login_usuario_invalido"), IdiomaAppBrowser.getText("general_alert_title"));
